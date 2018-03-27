@@ -8,7 +8,11 @@ class Estoque
 
 //adiciona $itens como indice e $qtd como valor
   public function add($item,$qtd){
-    $this->itens[$item]= $qtd;
+    if (isset($this->itens[$item])){
+      $qtd += $this->itens[$item];
+    }
+    $this->itens[$item] = $qtd;
+
 
   }
 
@@ -22,7 +26,9 @@ $e = new Estoque();
 
 // var_dump($e);
 
+$e->add('blusa azul',1);
 $e->add('blusa azul',5);
+$e->add('blusa azul',10);
 $e->add('blusa verde',52);
 echo "<pre>";
 
