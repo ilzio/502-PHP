@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- primeiro e' a declaracao, o cabeçalho, o unico que é predefinido. Deve ser o primeiro, nao pode ter nada antes dele -->
+<apostilas> <!-- tag pai -->
+  <apostila versao="1.0"> <!-- tags podem ter atributos como no html mas nao tem nada de predefinido -->
+    <titulo>Desenvolvimento WEB com PHP </titulo>
+    <topicos>
+      <topico> Configuraçao de ambiente </topico>
+      <topico> Fundamentos da lenguagem PHP </topico>
+    </topicos>
+  </apostila>
+  <apostila versao="1.0" ano="2018"> <!-- tags podem ter atributos como no html mas nao tem nada de predefinido -->
+    <titulo>Desenvolvimento orientado a Objetos com PHP </titulo>
+    <topicos>
+      <topico> PDO </topico>
+      <topico> SPL </topico>
+    </topicos>
+  </apostila>
+  <apostila versao="2.0"> <!-- tags podem ter atributos como no html mas nao tem nada de predefinido -->
+    <titulo>PHP ENTERPRISE </titulo>
+    <topicos>
+      <topico> XML </topico>
+      <topico> Traits </topico>
+    </topicos>
+  </apostila>
+</apostilas>
