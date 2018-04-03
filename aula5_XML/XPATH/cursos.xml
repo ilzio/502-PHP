@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cursos> 
+  <curso versao="1.0" codigo="500">
+    <nome>Desenvolvimento WEB com PHP </nome>
+      </curso>
+  <curso versao="1.0" codigo="501">
+    <nome>Desenvolvimento orientado a Objetos com PHP </nome>
+      </curso>
+  <curso versao="2.0" codigo="502">
+    <nome>PHP ENTERPRISE </nome>
+      </curso>
+</cursos>
