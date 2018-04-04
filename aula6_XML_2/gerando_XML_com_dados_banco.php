@@ -25,3 +25,26 @@ echo "<pre>";
     // header('Content-type: text/xml');
 
     echo $xml->asXML();
+
+
+//criar xml com Dom
+
+// $dom = new DOMDocument();
+//
+// foreach ($pessoas as $pessoa) {
+// $dom->createElement('pessoa');
+// $pessoaItem = $dom->getElementsByTagName('pessoa');
+// $idItem= $dom->createElement('id',$pessoa['id']);
+// $nomeItem = $dom->createElement('nome',$pessoa['nome']);
+// $emailItem= $dom->createElement('email',$pessoa['email']);
+//
+// $pessoaItem->appendChild($idItem);
+// $pessoaItem->appendChild($nomeItem);
+// $pessoaItem->appendChild($emailItem);
+// }
+
+  //gerar json com dados do banco
+
+  $json = json_encode($pessoas);
+  //especifica o nome do arquivo e o conteudo ja encoded
+  file_put_contents('pessoas.json', $json);
